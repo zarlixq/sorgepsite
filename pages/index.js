@@ -5,9 +5,8 @@ export default function Home() {
   const router = useRouter()
 
   useEffect(() => {
-    // Sayfa yüklendiğinde direkt register sayfasına yönlendir
-    router.replace('/register')
-  }, [router])
+    router.push('/register') // replace yerine push
+  }, [])
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900">
